@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_login</name>
+   <name>icon_orderHistory</name>
    <tag></tag>
-   <elementGuidId>0f2fe5de-5a6c-4bfe-8ec7-e3bbd0be6f24</elementGuidId>
+   <elementGuidId>170faf3b-1cb8-472b-96c5-445002d73ce2</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//*/button[@title='Login']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class='nav-dash']/li[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_loginPassword</name>
+   <name>icon_notifications</name>
    <tag></tag>
-   <elementGuidId>11b338b9-8bcb-4306-b910-258075a545a6</elementGuidId>
+   <elementGuidId>e9dafc5d-bb22-4aab-a032-3384a4aae6ad</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>#loginFrm_password</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class='nav-dash']/li[8]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

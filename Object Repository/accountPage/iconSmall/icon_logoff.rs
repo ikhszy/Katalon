@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_loginName</name>
+   <name>icon_logoff</name>
    <tag></tag>
-   <elementGuidId>fa1eb0a2-50f2-4d0d-b056-0985a87431fb</elementGuidId>
+   <elementGuidId>30859beb-f05e-4c7d-820b-71bacd554d5d</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>#loginFrm_loginname</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@class='nav-dash']/li[9]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

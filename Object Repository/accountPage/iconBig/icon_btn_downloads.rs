@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_forgotPassword</name>
+   <name>icon_btn_downloads</name>
    <tag></tag>
-   <elementGuidId>3d39d02f-e646-4055-a764-c58623e72e3f</elementGuidId>
+   <elementGuidId>c414cc80-af59-4dc8-bb91-47edc6bdd6dc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;loginFrm&quot;]/fieldset/a[1]</value>
+         <value>(//a[@class='btn'])[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

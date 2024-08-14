@@ -19,10 +19,16 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://automationteststore.com/')
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('navigationBar/navbar_login'))
 
-WebUI.sendKeys(findTestObject('RegisterLoginPage/input_loginName'), GlobalVariable.testUser)
+WebUI.sendKeys(findTestObject('registerLoginPage/input_loginName'), GlobalVariable.testUser)
 
-WebUI.sendKeys(findTestObject('RegisterLoginPage/input_loginPassword'), GlobalVariable.testPassword)
+WebUI.sendKeys(findTestObject('registerLoginPage/input_loginPassword'), GlobalVariable.testPassword)
 
-WebUI.click(findTestObject('RegisterLoginPage/btn_login'))
+WebUI.click(findTestObject('registerLoginPage/btn_login'))
+
+assert WebUI.verifyElementVisible(findTestObject('Object Repository/accountPage/account_title')) == true
+
+assert WebUI.verifyElementText(findTestObject('Object Repository/accountPage/account_title'), 'MY ACCOUNT') == true

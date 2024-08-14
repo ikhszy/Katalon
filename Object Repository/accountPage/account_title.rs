@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_forgotLogin</name>
+   <name>account_title</name>
    <tag></tag>
-   <elementGuidId>4a5d8296-d4c7-46bf-b818-06b1ac76a6db</elementGuidId>
+   <elementGuidId>6c377a3e-951c-4aa5-be64-d365b58dcc60</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;loginFrm&quot;]/fieldset/a[2]</value>
+         <value>//*[@class='maintext']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
