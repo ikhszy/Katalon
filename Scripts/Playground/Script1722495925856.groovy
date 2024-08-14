@@ -16,10 +16,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.github.javafaker.Faker
 
-WebUI.openBrowser(GlobalVariable.base_url)
+//WebUI.openBrowser(GlobalVariable.base_url)
+//
+//String pageTitle = WebUI.getWindowTitle()
+//
+//assert (pageTitle == 'A place to practice your automation skills!') == true
 
-String pageTitle = WebUI.getWindowTitle()
+// generate data
+Faker faker = new Faker();
+String name = faker.name().firstName();
 
-assert (pageTitle == 'A place to practice your automation skills!') == true
-
+System.out.println(name);
