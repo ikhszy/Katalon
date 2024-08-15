@@ -14,21 +14,35 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable as gv
 import org.openqa.selenium.Keys as Keys
+import com.github.javafaker.Faker
 
-WebUI.openBrowser('https://automationteststore.com/')
+// generate data
+Faker faker = new Faker();
+String fname = faker.name().firstName();
+String lname = faker.name().lastName();
+String email = faker.internet().emailAddress();
+String phone = String.valueOf(faker.number().digits(8));
+String company = faker.company().buzzword();
+String address1 = faker.address().fullAddress();
+String city = faker.address().city();
+String country = 'United States';
+String state = 'Oklahoma';
+String zip = faker.number().digits(5);
+String loginname = fname + '_' + lname + '_testing';
+String password = faker.internet().password();
 
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('navigationBar/navbar_login'))
-
-WebUI.sendKeys(findTestObject('registerLoginPage/input_loginName'), GlobalVariable.testUser)
-
-WebUI.sendKeys(findTestObject('registerLoginPage/input_loginPassword'), GlobalVariable.testPassword)
-
-WebUI.click(findTestObject('registerLoginPage/btn_login'))
-
-assert WebUI.verifyElementVisible(findTestObject('Object Repository/accountPage/account_title')) == true
-
-assert WebUI.verifyElementText(findTestObject('Object Repository/accountPage/account_title'), 'MY ACCOUNT') == true
+// assign to variables
+gv.reg_firstname = fname;
+gv.reg_lastname = lname;
+gv.reg_email = email;
+gv.reg_phone = phone;
+gv.reg_company = company;
+gv.reg_address1 = address1;
+gv.reg_city = city;
+gv.reg_country = country;
+gv.reg_state = state;
+gv.reg_zip = zip;
+gv.reg_loginname = loginname;
+gv.reg_password = password;
